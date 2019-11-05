@@ -15,4 +15,3 @@ let name = "Hayden Kua"
 print(name)
 
 //this is some comment
-//duh
