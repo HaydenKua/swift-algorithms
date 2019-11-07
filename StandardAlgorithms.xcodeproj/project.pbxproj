@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		771B309D23718D030093F4BB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B309C23718D030093F4BB /* main.swift */; };
 		771B30AA237192760093F4BB /* StandardAlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B30A9237192760093F4BB /* StandardAlgorithmsTests.swift */; };
+		773AEF7D23743DFF00D3CD00 /* SortingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773AEF7C23743DFF00D3CD00 /* SortingTest.swift */; };
+		773AEF7F23743F5400D3CD00 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773AEF7E23743F5400D3CD00 /* Sorting.swift */; };
+		773AEF8023743F8600D3CD00 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773AEF7E23743F5400D3CD00 /* Sorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +32,8 @@
 		771B30A7237192760093F4BB /* StandardAlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandardAlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		771B30A9237192760093F4BB /* StandardAlgorithmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardAlgorithmsTests.swift; sourceTree = "<group>"; };
 		771B30AB237192760093F4BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		773AEF7C23743DFF00D3CD00 /* SortingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingTest.swift; sourceTree = "<group>"; };
+		773AEF7E23743F5400D3CD00 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				771B309C23718D030093F4BB /* main.swift */,
+				773AEF7E23743F5400D3CD00 /* Sorting.swift */,
 			);
 			path = StandardAlgorithms;
 			sourceTree = "<group>";
@@ -79,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				771B30A9237192760093F4BB /* StandardAlgorithmsTests.swift */,
+				773AEF7C23743DFF00D3CD00 /* SortingTest.swift */,
 				771B30AB237192760093F4BB /* Info.plist */,
 			);
 			path = StandardAlgorithmsTests;
@@ -172,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773AEF7F23743F5400D3CD00 /* Sorting.swift in Sources */,
 				771B309D23718D030093F4BB /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +188,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773AEF8023743F8600D3CD00 /* Sorting.swift in Sources */,
+				773AEF7D23743DFF00D3CD00 /* SortingTest.swift in Sources */,
 				771B30AA237192760093F4BB /* StandardAlgorithmsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
