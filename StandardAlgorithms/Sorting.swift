@@ -28,19 +28,43 @@ class Sorting {
     
     func merge(leftArray: [Int], rightArray: [Int]) -> [Int] {
         var listOne = leftArray
-        let listTwo = rightArray
-        listOne.append(contentsOf: listTwo)
-        return listOne
+        var listTwo = rightArray
+        var sorted = [Int]()
+        while listOne.count != 0 && listTwo.count != 0 {
+            if listOne[0] > listTwo[0] {
+                sorted.append(listTwo[0])
+                listTwo.removeFirst()
+            } else {
+                sorted.append(listOne[0])
+                listOne.removeFirst()
+            }
+        }
+        sorted.append(contentsOf: listTwo)
+        sorted.append(contentsOf: listOne)
+        return sorted
     }
     
     func mergeSort(data: [Int]) -> [Int] {
         var list = data
-        var list2 = [Int]()
         var midpoint = list.count/2
-        for i in 0...midpoint {
-            list2.append(list[i])
+        if list.count <= 1 {
+            return list
+        } else {
+            var list1 = [Int]()
+            var list2 = [Int]()
+            for i in midpoint ..< array.count {
+                list2.append(list[i])
+            }
+            for i in 0 ..< mid {
+                list1.append(array[i])
+            }
+            list1 = mergeSort(list1)
+            list2 = mergeSort(list2)
+            return merge(list1, list2)
+        }
+            
         }
     }
-}
+
 
 
