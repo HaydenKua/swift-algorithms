@@ -62,6 +62,17 @@ class SortingTest: XCTestCase {
         }
     }
     
-    
+    func testLinearSearchWithOneIntegerThatHasToBeFound() {
+        //arrange
+        let searching = Sorting()
+        let testCases = [(inputOne: [1,2,3,4,5], inputTwo: 1, expected: "Yes"),(inputOne:[6,7,10,12], inputTwo: 100, expected: "No")]
+        
+        //act
+        //assert
+        for testCase in testCases {
+            let actual = sorting.linearSearch(list: testcase.inputOne, value: testcase.inputTwo)
+            XCTAssertEqual(actual, testCase.expected)
+        }
+    }
     
 }

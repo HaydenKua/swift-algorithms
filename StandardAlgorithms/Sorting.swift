@@ -45,8 +45,8 @@ class Sorting {
     }
     
     func mergeSort(data: [Int]) -> [Int] {
-        var list = data
-        var midpoint = list.count/2
+        let list = data
+        let midpoint = list.count/2
         if list.count <= 1 {
             return list
         } else {
@@ -60,7 +60,7 @@ class Sorting {
             }
             list1 = mergeSort(data: list1)
             list2 = mergeSort(data: list2)
-            return merge(data: list1, list2)
+            return merge(leftArray: list1, rightArray: list2)
         }
             
         }
