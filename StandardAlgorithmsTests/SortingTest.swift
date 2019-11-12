@@ -54,7 +54,6 @@ class SortingTest: XCTestCase {
         let sorting = Sorting()
         let testCases = [(input: [10, 3, 2, 7, 1], expected: [1, 2, 3, 7, 10]),
                          (input: [456, 300, 3, 1, 128, 5], expected: [1, 3, 5, 238, 300, 456])]
-        
         //act
         //assert
         for testCase in testCases {

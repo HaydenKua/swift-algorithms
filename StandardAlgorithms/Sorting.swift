@@ -52,15 +52,15 @@ class Sorting {
         } else {
             var list1 = [Int]()
             var list2 = [Int]()
-            for i in midpoint ..< array.count {
+            for i in midpoint ..< list.count {
                 list2.append(list[i])
             }
-            for i in 0 ..< mid {
-                list1.append(array[i])
+            for i in 0 ..< midpoint {
+                list1.append(list[i])
             }
-            list1 = mergeSort(list1)
-            list2 = mergeSort(list2)
-            return merge(list1, list2)
+            list1 = mergeSort(data: list1)
+            list2 = mergeSort(data: list2)
+            return merge(data: list1, list2)
         }
             
         }
