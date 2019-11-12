@@ -66,5 +66,13 @@ class Sorting {
         }
     }
 
-
+    func linearSearch(list: [Int], value: Int) -> [Int] {
+        var found = false
+        for i in 0 ... list.count - 1 {
+            if list[i] == value {
+                found = true
+            }
+        }
+        return found
+}
 

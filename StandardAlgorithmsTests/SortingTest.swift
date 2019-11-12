@@ -65,7 +65,7 @@ class SortingTest: XCTestCase {
     func testLinearSearchWithOneIntegerThatHasToBeFound() {
         //arrange
         let searching = Sorting()
-        let testCases = [(inputOne: [1,2,3,4,5], inputTwo: 1, expected: "Yes"),(inputOne:[6,7,10,12], inputTwo: 100, expected: "No")]
+        let testCases = [(inputOne: [1,2,3,4,5], inputTwo: 1, expected: true),(inputOne:[6,7,10,12], inputTwo: 100, expected: false)]
         
         //act
         //assert
