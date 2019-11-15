@@ -63,10 +63,10 @@ class Sorting {
             return merge(leftArray: list1, rightArray: list2)
         }
             
-        }
+        
     }
 
-    func linearSearch(list: [Int], value: Int) -> [Int] {
+    func linearSearch(list: [Int], value: Int) -> Bool {
         var found = false
         for i in 0 ... list.count - 1 {
             if list[i] == value {
@@ -74,5 +74,6 @@ class Sorting {
             }
         }
         return found
-}
+    }
 
+}

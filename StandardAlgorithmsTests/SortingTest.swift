@@ -11,7 +11,7 @@ import XCTest
 class SortingTest: XCTestCase {
 
     func testBubbleSortWithIntegerArrayReturnsSortedIntegers() {
-        //arrrange
+        //arrange
         let sorting = Sorting()
         let data = [5, 4, 1, 3]
         //act
@@ -70,7 +70,7 @@ class SortingTest: XCTestCase {
         //act
         //assert
         for testCase in testCases {
-            let actual = sorting.linearSearch(list: testcase.inputOne, value: testcase.inputTwo)
+            let actual = searching.linearSearch (list: testCase.inputOne, value: testCase.inputTwo)
             XCTAssertEqual(actual, testCase.expected)
         }
     }
