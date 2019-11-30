@@ -39,7 +39,7 @@ class SortingTest: XCTestCase {
     func testMergeWithDifferentIntegerArraysReturnsOneIntegerArray() {
         //arrange
         let sorting = Sorting()
-        let testCases = [(inputOne: [1, 3, 2], inputTwo: [4, 6, 5], expected: [1, 3, 2, 4, 6, 5]),(inputOne: [112, 33, 52], inputTwo: [10, 20], expected: [112, 33, 52, 10, 20])]
+        let testCases = [(inputOne: [1, 2, 4], inputTwo: [3, 5, 6], expected: [1, 2, 3, 4, 5, 6]),(inputOne: [33, 52, 113], inputTwo: [10, 40], expected: [10, 33, 40, 52, 113])]
         
         //act
         //assert
@@ -53,7 +53,7 @@ class SortingTest: XCTestCase {
         //arrange
         let sorting = Sorting()
         let testCases = [(input: [10, 3, 2, 7, 1], expected: [1, 2, 3, 7, 10]),
-                         (input: [456, 300, 3, 1, 128, 5], expected: [1, 3, 5, 238, 300, 456])]
+                         (input: [456, 300, 3, 1, 128, 5], expected: [1, 3, 5, 128, 300, 456])]
         //act
         //assert
         for testCase in testCases {
@@ -62,17 +62,5 @@ class SortingTest: XCTestCase {
         }
     }
     
-    func testLinearSearchWithOneIntegerThatHasToBeFound() {
-        //arrange
-        let searching = Sorting()
-        let testCases = [(inputOne: [1,2,3,4,5], inputTwo: 1, expected: true),(inputOne:[6,7,10,12], inputTwo: 100, expected: false)]
-        
-        //act
-        //assert
-        for testCase in testCases {
-            let actual = searching.linearSearch (list: testCase.inputOne, value: testCase.inputTwo)
-            XCTAssertEqual(actual, testCase.expected)
-        }
-    }
     
 }

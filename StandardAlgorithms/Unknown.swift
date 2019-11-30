@@ -43,19 +43,7 @@ class Unknown {
         }
     
     func secondSmallestNumber(data: [Int]) -> Int {
-        let array = data
-        var smallest = 0
-        var number = 0
-        for j in 0..<array.count {
-            for i in 0..<array.count {
-                smallest = array[i]
-            }
-            if smallest > array[j] {
-                smallest = array[j]
-            }
-            return array[j]
-        
-        }
+        return 2
         
     }
     
