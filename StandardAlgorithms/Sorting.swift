@@ -65,6 +65,20 @@ class Sorting {
             
         
     }
+    
+    func insertionSort(data: [Int]) -> [Int] {
+        var list = data
+        for i in 1...(list.count-1) {
+            var temp = list[i]
+            var j = i-1
+            while j >= 0 && list[j] > temp {
+                list[j+1] = list[j]
+                j -= 1
+            }
+            list[j+1] = temp
+        }
+        return list
+    }
 
     
 
