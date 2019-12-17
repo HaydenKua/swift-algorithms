@@ -74,4 +74,16 @@ class SortingTest: XCTestCase {
         }
     }
     
+    func testQuickSortWithMultipleIntegerArraysReturnsSortedIntegerArrays() {
+        //arrange
+        let sorting = Sorting()
+        let testCases = [(input: [1, 5, 7, 2, 4, 3], expected: [1, 2, 3, 4, 5, 7]), (input: [15, 20, 12, 32, 50, 40], expected: [12, 15, 20, 32, 40, 50])]
+        //act
+        //assert
+        for testCase in testCases {
+            let actual = sorting.quickSort(data: testCase.input)
+            XCTAssertEqual(actual, testCase.expected)
+        }
+    }
+    
 }

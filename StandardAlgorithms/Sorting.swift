@@ -80,6 +80,30 @@ class Sorting {
         return list
     }
 
-    
+    func quickSort(data: [Int]) -> [Int] {
+        if data.count <= 1 {
+            return data
+        } else {
+            let pivot = data[0]
+            var left = [Int]()
+            var right = [Int]()
+
+            for i in 1..<data.count {
+                let item = data[i]
+                if item < pivot {
+                    left.append(item)
+                } else {
+                    right.append(item)
+                }
+            }
+
+            var sortedData = [Int]()
+            sortedData.append(contentsOf: quickSort(data: left))
+            sortedData.append(pivot)
+            sortedData.append(contentsOf: quickSort(data: right))
+            return sortedData
+            
+        }
+    }
 
 }
